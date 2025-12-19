@@ -1,8 +1,38 @@
 /* CUSTOM-PROPS */
 :root {
-  --color-name: #000;
-  --color-name: #000;
-  --color-name: #000;
+  --light-brown: #F2D3B1;
+  --brown: #C99B67;
+  --green-color: #0A775F;                                               ;
+  --black: #000;
+  --text-color: #333333;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+  url("Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+    src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+  url("Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -25,11 +55,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
-  color: #000;
+  color: var(--text-color);
 }
 
 img {
@@ -38,7 +68,7 @@ img {
 }
 
 /* AUTOFILL-SYLES */
-/* input:-webkit-autofill,
+input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
@@ -50,17 +80,17 @@ select:-webkit-autofill:focus {
   border-color: transparent;
   -webkit-text-fill-color: inherit;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-} */
+}
 
 
 /* PLACEHOLDER-STYLES */
-/* ::-webkit-input-placeholder,
+::-webkit-input-placeholder,
 ::-moz-placeholder,
 :-ms-input-placeholder,
 :-moz-placeholder {
   color: rgba(52, 49, 61, 0.5);
   opacity: 1;
-} */
+}
 
 
 /* VISUALLY-HIDDEN */
