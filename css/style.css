@@ -109,9 +109,122 @@ select:-webkit-autofill:focus {
 /* CONTAINER  */
 .container {
   width: 100%;
-  max-width: 1064px;
-  padding-left: 24px;
-  padding-right: 24px;
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* SITE-HEADER */
+.site-header-hero-wrapper {
+  background-image: url("/img/site-header-intro-bg.jpg");
+  background-color: var(--light-brown);
+}
+
+.site-header {
+  position: relative;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__logo-link {
+  flex-shrink: 0;
+}
+.site-header__logo-img {
+  width: 235px;
+  height: 24px;
+}
+
+.site-header--open .site-header__sitenav {
+  display: block;
+}
+
+/* NAVBAR */
+
+.sitenav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+}
+.sitenav__link {
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.sitenav__link:hover {
+  color: var(--green-color);
+}
+
+
+/* SITE HEADER TOGGLE BUTTON  */
+.site-header__toggle-btn {
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+.site-header__menu-icon {
+  font-size: 30px;
+}
+
+
+@media (max-width: 800px) {
+  .site-header {
+    padding: 30px 20px 30px 30px;
+  }
+
+  .site-header__container {
+    padding: 0;
+  }
+
+  .site-header__sitenav {
+    display: none;
+    width: 100%;
+    padding: 0 50px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--light-brown);
+  }
+
+  .sitenav__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .site-header__toggle-btn {
+    display: block;
+  }
+
+  .sitenav__list {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 580px) {
+  .site-header__logo-img {
+    width: 160px;
+    height: 18px;
+  }
+
+  .site-header__menu-icon {
+    font-size: 22px;
+  }
 }
