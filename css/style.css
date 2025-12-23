@@ -121,6 +121,7 @@ select:-webkit-autofill:focus {
   outline-offset: 4px;
 }
 
+
 /* BUTTON */
 .cta-button {
   display: inline-block;
@@ -134,6 +135,14 @@ select:-webkit-autofill:focus {
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
@@ -161,6 +170,7 @@ select:-webkit-autofill:focus {
 .site-header__logo-link {
   flex-shrink: 0;
 }
+
 .site-header__logo-img {
   width: 235px;
   height: 24px;
@@ -178,9 +188,11 @@ select:-webkit-autofill:focus {
   padding: 0;
   list-style: none;
 }
+
 .sitenav__item:not(:last-child) {
   margin-right: 40px;
 }
+
 .sitenav__link {
   color: var(--text-color);
   text-decoration: none;
@@ -255,9 +267,117 @@ select:-webkit-autofill:focus {
   object-fit: cover;
 }
 
+
+/* OUR-COLLECTION */
+.collection {
+  overflow-x: hidden;
+}
+
+.collection__inner {
+  position: relative;
+  padding: 50px 143px;
+  background-color: #F6F6EE;
+  background-image: url('../img/collection-bg-img.png');
+}
+
+.collection__heading {
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.collection__list {
+  margin: 0;
+  padding: 0;
+}
+
+.collection__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 117px;
+}
+
+.collection__item--reverse {
+  flex-direction: row-reverse;
+}
+
+.collection__item--reverse .collection__image {
+  margin-right: 0;
+}
+
+.collection__image {
+  width: 166px;
+  margin-right: 117px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.collection__content {
+  max-width: 400px;
+}
+
+.content__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.content__text {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.decoration-img--leaves-left {
+  position: absolute;
+  top: 10px;
+  left: -186px;
+}
+
+.decoration-img--leaves-left-light {
+  position: absolute;
+  bottom: 190px;
+  left: -216px;
+}
+
+.decoration-img--leaves-right {
+  position: absolute;
+  bottom: 460px;
+  right: -350px;
+}
+
+
+@media (min-width: 1700px) {
+  .hero__text-content {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 1240px) {
   .hero__title {
     font-size: 56px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .collection__item {
+    padding: 0;
+  }
+
+  .decoration-img--leaves-left {
+    top: 80px;
+    width: 310px;
+  }
+
+  .decoration-img--leaves-right {
+    width: 470px;
   }
 }
 
@@ -342,6 +462,33 @@ select:-webkit-autofill:focus {
     width: 100%;
     height: auto;
   }
+
+
+  /* COLLECTION  */
+  .collection__inner {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .collection__image {
+    width: 100px;
+    margin-right: 20px;
+  }
+
+  .decoration-img--leaves-left {
+    top: -20px;
+    left: -214px;
+  }
+
+  .decoration-img--leaves-left-light {
+    bottom: 24px;
+    left: -240px;
+  }
+
+  .decoration-img--leaves-right {
+    bottom: 80px;
+    right: -380px;
+  }
 }
 
 @media (max-width: 580px) { 
@@ -359,8 +506,18 @@ select:-webkit-autofill:focus {
     font-size: 22px;
   }
 
+  .main-content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
 
   /* HERO */
+  .collection__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .hero__brand-img {
     width: 115px;
     top: 20px;
@@ -377,4 +534,50 @@ select:-webkit-autofill:focus {
   .hero__text {
     font-size: 15px;
   }
+
+
+  /* COLLECTION  */
+  .collection__inner  {
+    padding: 20px 40px;
+  }
+
+  .collection__heading {
+    margin-bottom: 30px;
+  }
+
+  .collection__image {
+    width: 90px;
+    margin-right: 40px;
+  }
+
+  .content__text {
+    font-size: 16px;
+  }
+
+  .decoration-img--leaves-left {
+    top: -74px;
+    left: -255px;
+  }
+
+  .decoration-img--leaves-left-light {
+    left: -270px;
+  }
+
+  .decoration-img--leaves-right {
+    right: -405px;
+  }
+}
+
+@media (max-width: 450px) { 
+  .collection__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .decoration-img--leaves-left,
+  .decoration-img--leaves-left-light,
+  .decoration-img--leaves-right {
+    display: none;
+  }
+
 }
