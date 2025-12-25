@@ -1,0 +1,133 @@
+.feature__inner {
+    padding: 50px 30px;
+    /* background-color: #C99B67; */
+    background-image: url('../../img/features-background-image.jpg');
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+}
+
+.feature__heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.feature__lead {
+    margin-top: 0;
+    margin-bottom: 80px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    line-height: 28px;
+}
+
+.feature__list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.feature__item {
+    width: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.feature__img {
+    margin-bottom: 28px;
+    width: 100%;
+    max-width: 433px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.feature__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.feature__text {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.feature__decoration-img {
+    position: absolute;
+    top: -50px;
+    left: -30px;
+}
+
+@media (max-width: 900px) {
+    .feature__inner {
+        padding: 30px 20px;
+    }
+
+    .feature__lead {
+        margin-bottom: 40px;
+    }
+
+    .feature__decoration-img {
+        width: 110px;
+        left: -20px;
+    }
+
+    .feature__item {
+    width: calc(100% / 2 - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .feature__heading  {
+        font-size: 28px;
+    }
+    
+    .feature__lead {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+
+    .feature__list {
+        justify-content: center;
+    }
+
+    .feature__item {
+        width: 100%;
+    }
+
+    .feature__img {
+        max-width: 100%;
+        height: 330px;
+    }
+
+    .feature__title {
+        font-size: 24px;
+    }
+
+    .feature__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .feature__decoration-img {
+        width: 90px;
+        top: -28px;
+    }
+}
