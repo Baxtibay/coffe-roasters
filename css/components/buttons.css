@@ -1,0 +1,29 @@
+.cta-button {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 50px;
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cta-button--green {
+  color: #fff;
+  background-color: var(--green-color);
+}
+
+.cta-button--brown {
+  color: #fff;
+  background-color: var(--brown);
+}
+
+@media (max-width: 580px) { 
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}

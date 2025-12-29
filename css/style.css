@@ -1,11 +1,13 @@
+@import url('./components/buttons.css');
 @import url('./components/header.css');
 @import url('./components/hero.css');
 @import url('./components/collection.css');
 @import url('./components/feature.css');
+@import url('./components/how-it-works.css');
 
 /* CUSTOM-PROPS */
 :root {
-  --light-brown: #F2D3B1;
+  --light-brown: #F8F8F2;
   --brown: #C99B67;
   --green-color: #0A775F;                                               ;
   --black: #000;
@@ -127,22 +129,6 @@ select:-webkit-autofill:focus {
 }
 
 
-/* BUTTON */
-.cta-button {
-  display: inline-block;
-  padding: 16px 24px;
-  color: #fff;
-  background-color: var(--green-color);
-  border-radius: 50px;
-  font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
@@ -158,11 +144,6 @@ select:-webkit-autofill:focus {
 }
 
 @media (max-width: 580px) { 
-  .cta-button--full-with {
-    width: 100%;
-    text-align: center;
-  }
-  
   .main-content {
     padding-top: 16px;
     padding-bottom: 16px;
