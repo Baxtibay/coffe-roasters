@@ -1,15 +1,18 @@
 @import url('./components/buttons.css');
 @import url('./components/header.css');
+@import url('./components/navbar.css');
 @import url('./components/hero.css');
 @import url('./components/collection.css');
 @import url('./components/feature.css');
 @import url('./components/how-it-works.css');
+@import url('./components/footer.css');
 
 /* CUSTOM-PROPS */
 :root {
-  --light-brown: #F8F8F2;
-  --brown: #C99B67;
-  --green-color: #0A775F;                                               ;
+  --light-brown: #f8f8f2;
+  --header-bg-color: #f3d7b7;
+  --brown: #c99b67;
+  --green-color: #0a775f;
   --black: #000;
   --text-color: #333333;
 }
@@ -140,7 +143,7 @@ select:-webkit-autofill:focus {
 /* SITE-HEADER-HERO-WRAPPER */
 .site-header-hero-wrapper {
   background-image: url("/img/site-header-intro-bg.jpg");
-  background-color: var(--light-brown);
+  background-color: var(--header-bg-color);
 }
 
 @media (max-width: 580px) { 

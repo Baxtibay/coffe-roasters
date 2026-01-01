@@ -1,0 +1,41 @@
+
+/* NAVBAR */
+.sitenav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.sitenav__link {
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.sitenav__link:hover {
+    color: var(--green-color);
+}
+
+@media (max-width: 800px) {
+    
+    .sitenav__item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .site-header__toggle-btn {
+        display: block;
+    }
+    
+    .sitenav--header .sitenav__list {
+        flex-direction: column;
+    }
+}
