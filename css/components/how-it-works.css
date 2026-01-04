@@ -90,6 +90,76 @@
   line-height: 28px;
 }
 
+/* HOW-IT-WORKS ABOUT-HTML */
+.how-it-works__locations-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: -20px;
+  padding: 0;
+  list-style: none;
+}
+
+.how-it-works__location-item {
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+  background-color: red;
+}
+
+.location-card {
+  position: relative;
+  height: 100%;
+  padding: 45px 55px 40px 20px;
+  background-color: var(--light-brown);
+}
+
+.location-card__address {
+  padding-top: 95px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.location-card__img {
+  width: 120px;
+  position: absolute;
+  top: 45px;
+  right: 55px;
+}
+
+.location-card__country-title {
+  max-width: 235px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.location-card__lines {
+  margin: 0;
+}
+
+.location-card__block {
+  display: block;
+}
+
+.location-card__phone {
+  text-decoration: none;
+  color: var(--black);
+}
+
+@media (max-width: 1000px) {
+  .location-card__img {
+    top: 32px;
+    right: 28px;
+  }
+
+  .location-card__country-title {
+    font-size: 34px;
+  }
+}
+
 @media (max-width: 900px) {
   .how-it-works__inner {
     padding: 32px 20px;
@@ -127,12 +197,27 @@
     font-size: 17px;
     line-height: 26px;  
   }
+
+  .how-it-works--about .location-card__img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .how-it-works__location-item {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 600px) {
   .how-it-works__heading {
     margin-bottom: 20px;
     font-size: 32px;
+  }
+
+   .how-it-works--about .location-card__country-title {
+    font-size: 26px;
   }
 
   .how-it-works__list {
@@ -165,5 +250,11 @@
 
   .how-it-works__step-text {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 580px) {
+  .how-it-works__location-item {
+    width: 100%;
   }
 }
