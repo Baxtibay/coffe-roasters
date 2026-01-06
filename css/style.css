@@ -6,6 +6,7 @@
 @import url('./components/feature.css');
 @import url('./components/how-it-works.css');
 @import url('./components/footer.css');
+@import url('./components/modal.css');
 
 /* CUSTOM-PROPS */
 :root {
@@ -13,6 +14,7 @@
   --header-bg-color: #f3d7b7;
   --brown: #c99b67;
   --green-color: #0a775f;
+  --light-green: rgba(10, 119, 95, 20%);
   --black: #000;
   --text-color: #333333;
 }
@@ -75,6 +77,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+body.is-locked {
+  position: fixed;
+  width: 100%;
 }
 
 /* AUTOFILL-SYLES */

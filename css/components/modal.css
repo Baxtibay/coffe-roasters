@@ -1,0 +1,182 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal__content {
+  position: relative;
+  max-width: 540px;
+  margin: 10vh auto 0;
+  background-color: #fefcf7;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+/* MODAL-HEADER */
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 30px;
+  margin-bottom: 50px;
+  background-color: var(--brown);
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+/* MODAL-BODY */
+.modal__body {
+  padding: 0 30px;
+}
+
+.modal__summary-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  color: var(--black);
+}
+
+.modal__summary-text span {
+  color: #0e8784;
+}
+
+.modal__note {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  color: #333;
+}
+
+
+/* MODAL-FOOTER */
+.modal__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px 30px;
+}
+
+.modal__price {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.modal__checkout {
+  padding: 16px 36px;
+  border-radius: 50px;
+}
+
+@media (max-width: 1024px) {
+  .modal__content {
+    max-width: 450px;
+  }
+
+  .modal__header {
+    margin-bottom: 30px;
+  }
+
+  .modal__title {
+    font-size: 34px;
+  }
+
+  .modal__footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal__content {
+    max-width: 380px;
+  }
+
+  .modal__header {
+    padding: 19px 20px;
+    margin-bottom: 20px;
+  }
+
+  .modal__title {
+    font-size: 24px;
+  }
+
+  .modal__body {
+    padding: 0 20px;
+  }
+
+  .modal__summary-text {
+    font-size: 22px;
+  }
+
+  .modal__footer {
+    padding: 20px;
+  }
+
+  .modal__price {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 580px) {
+  .modal__content {
+    max-width: 320px;
+  }
+
+  .modal__header {
+    padding: 19px 20px;
+    margin-bottom: 20px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+  }
+
+  .modal__summary-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .modal__note {
+    line-height: 24px;
+  }
+
+  .modal__footer {
+    padding: 20px;
+  }
+
+  .modal__price {
+    font-size: 18px;
+  }
+}

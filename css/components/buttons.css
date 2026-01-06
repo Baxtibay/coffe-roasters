@@ -1,6 +1,7 @@
 .cta-button {
   display: inline-block;
   padding: 16px 24px;
+  border: 0;
   border-radius: 50px;
   color: #000;
   font-size: 16px;
@@ -9,6 +10,19 @@
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.cta-button:hover {
+  opacity: 0.8;
+}
+
+.cta-button:active {
+  opacity: 0.6;
+}
+
+.how-it-works .cta-button:focus {
+  outline: 2px dashed var(--brown);
+  outline-offset: 3px;
 }
 
 .cta-button--green {
@@ -23,7 +37,15 @@
 
 @media (max-width: 580px) { 
   .cta-button {
-    width: 100%;
     text-align: center;
+  }
+
+  .cta-button--xl {
+    width: 100%;
+  }
+
+  .cta-button--ls {
+    padding: 12px 18px;
+    font-size: 14px;
   }
 }

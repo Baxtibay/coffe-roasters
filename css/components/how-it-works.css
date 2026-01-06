@@ -5,6 +5,10 @@
   background-image: url("../../img/how-it-works-bg.jpg");
 }
 
+.how-it-works--plan .how-it-works__inner {
+  margin-bottom: 20px;
+}
+
 .how-it-works__heading {
   margin-top: 0;
   margin-bottom: 80px;
@@ -103,7 +107,6 @@
 .how-it-works__location-item {
   width: calc(100% / 3 - 20px);
   margin-left: 20px;
-  background-color: red;
 }
 
 .location-card {
