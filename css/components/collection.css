@@ -581,6 +581,10 @@
         font-size: 26px;
         text-align: center;
     }
+
+    .collection--home .content__title {
+        font-size: 26px;
+    }
 }
 
 
