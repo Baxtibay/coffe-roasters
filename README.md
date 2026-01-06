@@ -2,6 +2,10 @@
 
 A responsive multi-page coffee subscription website built using HTML, CSS, and JavaScript.
 
+## Live Demo
+
+https://your-live-demo-link-here](https://baxti-coffe-roasters.netlify.app/
+
 ## Project Purpose
 
 This project coffee subscription service website.
