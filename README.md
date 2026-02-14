@@ -4,7 +4,7 @@ A responsive multi-page coffee subscription website built using HTML, CSS, and J
 
 ## Live Demo
 
-https://your-live-demo-link-here](https://baxti-coffe-roasters.netlify.app/
+https://baxti-coffe-roasters.netlify.app/
 
 ## Project Purpose
 
